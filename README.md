@@ -6,6 +6,7 @@ Statcast_download and Statcast_download_clean contain the data that was download
 In Excel, to clean the names of the players, I wrote a RemoveAccents function in VBA as 
 
 Function RemoveAccents(ByVal text As String) As String
+
     Dim AccChars As String
     Dim RegChars As String
     Dim i As Integer
@@ -18,6 +19,7 @@ Function RemoveAccents(ByVal text As String) As String
     Next i
 
     RemoveAccents = text
+    
 End Function
 
 After that, I removed the # and * that were at the end of the names after downloading from baseball reference using a substitute function. I did the same to remove periods within the names. Finally, I made the names lowercase and without any spaces so that they could be used as an identifier along with plate appearances and year. This identifier was chosen because it was universal between the baseball reference and baseball savant data. 
