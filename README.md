@@ -4,6 +4,7 @@ Project to predict the WAR (Wins above Replacement) of a player from the full se
 Statcast_download and Statcast_download_clean contain the data that was downloaded from Baseball Savant. The Statcast_download file also contains the excel cleaning functions that were undertook in order to clean the names. This data was then imported into MySQL using the Table Data Import Wizard.
 
 In Excel, to clean the names of the players, I wrote a RemoveAccents function in VBA as 
+
 Function RemoveAccents(ByVal text As String) As String
     Dim AccChars As String
     Dim RegChars As String
